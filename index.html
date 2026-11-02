@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hyderabad City Guide | Navigation Menu</title>
+  <meta name="description" content="A simple Hyderabad city guide demonstrating a clean, accessible navigation menu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#home">Hyderabad<span>Guide</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
+      <label for="nav-toggle" class="burger" aria-hidden="true"><i></i><i></i><i></i></label>
+
+      <ul class="menu" id="primary-menu">
+        <li><a href="#home">Home</a></li>
+        <li class="has-sub">
+          <a href="#landmarks" class="parent">Explore <span class="caret" aria-hidden="true">▾</span></a>
+          <ul class="sub">
+            <li><a href="#landmarks">Landmarks</a></li>
+            <li><a href="#food">Food &amp; Drink</a></li>
+          </ul>
+        </li>
+        <li><a href="#transport">Getting Around</a></li>
+        <li><a href="#contact" class="cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section id="home" class="hero">
+      <div class="wrap">
+        <p class="eyebrow">City guide</p>
+        <h1>Hyderabad,<br>the City of Pearls</h1>
+        <p class="lead">Centuries-old monuments, world-famous biryani and a fast-growing tech scene. Use the menu above to jump to any section.</p>
+        <a class="btn" href="#landmarks">Start exploring</a>
+      </div>
+    </section>
+
+    <section id="landmarks" class="section">
+      <div class="wrap">
+        <h2>Landmarks</h2>
+        <div class="cards">
+          <article class="card"><span class="tag">Old City</span><h3>Charminar</h3><p>The 16th-century monument with four minarets, surrounded by the busy Laad Bazaar for bangles and pearls.</p></article>
+          <article class="card"><span class="tag">Fort</span><h3>Golconda Fort</h3><p>A hilltop fortress known for its acoustics and for the evening sound-and-light show.</p></article>
+          <article class="card"><span class="tag">Lake</span><h3>Hussain Sagar</h3><p>A heart-shaped lake with a giant Buddha statue and a promenade for evening walks.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="food" class="section alt">
+      <div class="wrap">
+        <h2>Food &amp; Drink</h2>
+        <ul class="food-list">
+          <li><b>Hyderabadi biryani</b><span>Dum-cooked rice and meat layered with saffron and spices.</span></li>
+          <li><b>Haleem</b><span>A slow-cooked wheat and meat stew, especially popular during Ramadan.</span></li>
+          <li><b>Irani chai</b><span>Strong, milky tea, usually paired with Osmania biscuits.</span></li>
+          <li><b>Double ka meetha</b><span>A rich bread pudding dessert with dry fruits.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="transport" class="section">
+      <div class="wrap">
+        <h2>Getting Around</h2>
+        <div class="cards">
+          <article class="card"><h3>Metro Rail</h3><p>Fast and air-conditioned. The best choice for crossing the city during peak hours.</p></article>
+          <article class="card"><h3>City buses</h3><p>An extensive network that covers areas the Metro doesn't reach.</p></article>
+          <article class="card"><h3>Autos &amp; cabs</h3><p>Available through ride-hailing apps for short trips and late-night travel.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="wrap narrow">
+        <h2>Contact</h2>
+        <p>Spotted something missing or out of date? Send a note and it will be updated.</p>
+        <p><a class="mail" href="mailto:itsfaisalshaik8495@gmail.com">itsfaisalshaik8495@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-row">
+      <p>© 2026 Hyderabad Guide · Navigation menu demo</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
